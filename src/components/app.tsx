@@ -9,22 +9,22 @@ function App(): JSX.Element {
     return (
         <BrowserRouter>
         <Routes>
-            <Route>
-                path={AppRoute.Main}
+            <Route
+                path={AppRoute.Root}
                 element={<MainPage />}
-            </Route>
-            <Route>
+            />
+            <Route
                 path={AppRoute.Registration}
                 element={<RegistrationPage />}
-            </Route>
-            <Route>
+            />
+            <Route
                 path={AppRoute.Profile}
                 element={<ProfilePage />}
-            </Route>          
-            <Route>
+            />          
+            <Route
                 path="*"
                 element={<NotFoundPage />}
-            </Route>          
+            />          
         </Routes>
         </BrowserRouter>
     );
