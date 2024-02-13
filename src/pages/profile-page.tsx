@@ -1,7 +1,7 @@
 import Footer from "../components/footer";
 import Header from "../components/header";
 
-function Profile(): JSX.Element {
+function ProfilePage(): JSX.Element {
     return (
         <div>
             <Header />
@@ -477,4 +477,4 @@ function Profile(): JSX.Element {
     );
 }
 
-export default Profile;
+export default ProfilePage;
