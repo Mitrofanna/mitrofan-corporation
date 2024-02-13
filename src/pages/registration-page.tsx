@@ -1,62 +1,10 @@
 import Footer from "../components/footer";
+import Header from "../components/header";
 
 function RegistrationPage(): JSX.Element {
     return(
         <div>
-        <header className="header">
-        <div className="header__wrapper container">
-            <div className="header__logo-wrapper">
-            <a className="header__logo-link" href="main.html">
-                <img className="header__logo" src="img/logo.svg" alt="Логотип readme" width="128" height="24" />
-            </a>
-            <p className="header__topic">
-                mitrofan corporation
-            </p>
-            </div>
-            <form className="header__search-form form" action="#" method="get">
-            <div className="header__search">
-                <label className="visually-hidden">Поиск</label>
-                <input className="header__search-input form__input" type="search" />
-                <button className="header__search-button button" type="submit">
-                <svg className="header__search-icon" width="18" height="18">
-                    <use xlinkHref="#icon-search"></use>
-                </svg>
-                <span className="visually-hidden">Начать поиск</span>
-                </button>
-            </div>
-            </form>
-            <div className="header__nav-wrapper">
-            <nav className="header__nav">
-                <ul className="header__my-nav">
-                <li className="header__my-page header__my-page--popular">
-                    <a className="header__page-link" href="popular.html" title="Популярный контент">
-                    <span className="visually-hidden">Популярный контент</span>
-                    </a>
-                </li>
-                <li className="header__my-page header__my-page--feed">
-                    <a className="header__page-link" href="feed.html" title="Моя лента">
-                    <span className="visually-hidden">Моя лента</span>
-                    </a>
-                </li>
-                <li className="header__my-page header__my-page--messages">
-                    <a className="header__page-link" href="messages.html" title="Личные сообщения">
-                    <span className="visually-hidden">Личные сообщения</span>
-                    </a>
-                </li>
-                </ul>
-                <ul className="header__user-nav">
-                <li className="header__authorization">
-                    <a className="header__user-button header__authorization-button button" href="login.html">Вход</a>
-                </li>
-                <li>
-                    <a className="header__user-button header__user-button--active header__register-button button">Регистрация</a>
-                </li>
-                </ul>
-            </nav>
-            </div>
-        </div>
-        </header>
-
+       <Header />
         <main className="page__main page__main--registration">
         <div className="container">
             <h1 className="page__title page__title--registration">Регистрация</h1>

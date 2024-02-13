@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
+
 function Header(): JSX.Element {
     return (
         <header className="header">
       <div className="header__wrapper container">
         <div className="header__logo-wrapper">
-          <a className="header__logo-link" href="main.html">
+          <Link className="header__logo-link" to="/">
             <img className="header__logo" src="img/logo.svg" alt="Логотип readme" width="128" height="24" />
-          </a>
+          </Link>
           <p className="header__topic">
             mitrofan corporation
           </p>

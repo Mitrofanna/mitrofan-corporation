@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Footer from "../components/footer";
 
 function MainPage(): JSX.Element {
@@ -6,9 +7,9 @@ function MainPage(): JSX.Element {
             <header className="header page__header">
             <div className="header__wrapper page__header-wrapper container">
                 <div className="header__logo-wrapper page__logo-wrapper">
-                <a className="header__logo-link header__logo-link--active">
-                    <img className="header__logo" src="img/logo.svg" alt="Логотип readme" width="172" height="32" />
-                </a>
+                <Link className="header__logo-link header__logo-link--active" to="/">
+                    <img className="header__logo" src="img/logo.svg" alt="Логотип" width="172" height="32" />
+                </Link>
                 <p className="header__topic page__header-topic">
                     mitrofan corporation
                 </p>
@@ -20,7 +21,7 @@ function MainPage(): JSX.Element {
                     </p>
                     <ul className="header__user-nav">
                     <li>
-                        <a className="header__user-button header__register-button button button--transparent" href="registration.html">Регистрация</a>
+                        <Link className="header__user-button header__register-button button button--transparent" to="/registration">Регистрация</Link>
                     </li>
                     </ul>
                 </nav>
@@ -37,7 +38,7 @@ function MainPage(): JSX.Element {
                 <ul className="intro__advantages-list">
                     <li className="intro__advantage intro__advantage--ease">
                     <p className="intro__advantage-text">
-                        Общайся с друзьями&nbsp;или найди единомышленников
+                        Общайся&nbsp;с&nbsp;друзьями, находи единомышленников
                     </p>
                     </li>
                     <li className="intro__advantage intro__advantage--no-excess">
@@ -67,7 +68,9 @@ function MainPage(): JSX.Element {
                         <span className="form__error-label">Пароли не совпадают</span>
                     </div>
                     <a className="authorization__recovery" href="#">Восстановить пароль</a>
+                    <Link to='/profile'>
                     <button className="authorization__submit button button--main" type="submit">Войти</button>
+                    </Link>
                 </form>
                 </section>
             </div>
