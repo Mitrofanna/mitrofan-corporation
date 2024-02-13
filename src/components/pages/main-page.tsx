@@ -33,7 +33,7 @@ function MainPage() {
             <div className="page__main-wrapper page__main-wrapper--intro container">
                 <section className="intro">
                 <h2 className="visually-hidden">Наши преимущества</h2>
-                <b className="intro__slogan">Создавай контент,<br></br> делись творчеством,<br></br> и зарабатывай на этом</b>
+                <b className="intro__slogan">Создавай контент,<br></br> делись творчеством,<br></br> и зарабатывай </b>
                 <ul className="intro__advantages-list">
                     <li className="intro__advantage intro__advantage--ease">
                     <p className="intro__advantage-text">
