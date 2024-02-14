@@ -68,7 +68,7 @@ function MainPage(): JSX.Element {
                         <span className="form__error-label">Пароли не совпадают</span>
                     </div>
                     <a className="authorization__recovery" href="#">Восстановить пароль</a>
-                    <Link to='/profile'>
+                    <Link to='/feed'>
                     <button className="authorization__submit button button--main" type="submit">Войти</button>
                     </Link>
                 </form>

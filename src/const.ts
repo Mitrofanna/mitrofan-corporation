@@ -1,5 +1,5 @@
 export enum AppRoute {
     Root = '/',
     Registration = '/registration',
-    Profile = '/profile'
+    Feed = '/feed'
 };
