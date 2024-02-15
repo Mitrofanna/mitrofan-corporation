@@ -1,9 +1,12 @@
 import Footer from "../components/footer";
 import Header from "../components/header";
 import Post from "../components/post";
+import { filters } from "../const";
 import { posts } from "../mocks/post-mocks";
 
 function FeedPage(): JSX.Element {
+    const allPosts =posts.map((post) => <Post post={post}/>);
+
     return (
         <div>
             <Header />
@@ -16,55 +19,25 @@ function FeedPage(): JSX.Element {
                     <h2 className="visually-hidden">Лента</h2>
                     <div className="feed__main-wrapper">
                         <div className="feed__wrapper">
-                            {posts.map((post) => <Post post={post}/>)}
+                            {allPosts}
                         </div>
                     </div>
                     <ul className="feed__filters filters">
                         <li className="feed__filters-item filters__item">
-                        <a className="filters__button filters__button--active" href="#">
-                            <span>Все</span>
-                        </a>
+                            <a className="filters__button filters__button--active" href="#">
+                                <span>Все</span>
+                            </a>
                         </li>
-                        <li className="feed__filters-item filters__item">
-                        <a className="filters__button filters__button--photo button" href="#">
-                            <span className="visually-hidden">Фото</span>
-                            <svg className="filters__icon" width="22" height="18">
-                            <use xlinkHref="#icon-filter-photo"></use>
-                            </svg>
-                        </a>
-                        </li>
-                        <li className="feed__filters-item filters__item">
-                        <a className="filters__button filters__button--video button" href="#">
-                            <span className="visually-hidden">Видео</span>
-                            <svg className="filters__icon" width="24" height="16">
-                            <use xlinkHref="#icon-filter-video"></use>
-                            </svg>
-                        </a>
-                        </li>
-                        <li className="feed__filters-item filters__item">
-                        <a className="filters__button filters__button--text button" href="#">
-                            <span className="visually-hidden">Текст</span>
-                            <svg className="filters__icon" width="20" height="21">
-                            <use xlinkHref="#icon-filter-text"></use>
-                            </svg>
-                        </a>
-                        </li>
-                        <li className="feed__filters-item filters__item">
-                        <a className="filters__button filters__button--quote button" href="#">
-                            <span className="visually-hidden">Цитата</span>
-                            <svg className="filters__icon" width="21" height="20">
-                            <use xlinkHref="#icon-filter-quote"></use>
-                            </svg>
-                        </a>
-                        </li>
-                        <li className="feed__filters-item filters__item">
-                        <a className="filters__button filters__button--link button" href="#">
-                            <span className="visually-hidden">Ссылка</span>
-                            <svg className="filters__icon" width="21" height="18">
-                            <use xlinkHref="#icon-filter-link"></use>
-                            </svg>
-                        </a>
-                        </li>
+                        {filters.map((filter) => (
+                            <li key={filter.id} className="feed__filters-item filters__item">
+                            <a className={`filters__button filters__button--${filter.type} button`} href="#">
+                                <span className="visually-hidden">{filter.name}</span>
+                                <svg className="filters__icon" width="22" height="18">
+                                    <use xlinkHref={`#icon-filter-${filter.type}`}></use>
+                                </svg>
+                            </a>
+                            </li>
+                        ))}
                     </ul>
                     </section>
                     <aside className="promo">
