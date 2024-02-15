@@ -3,81 +3,78 @@ import { TPost } from "../types/post-type";
 export const posts: TPost[] = [
     {
         "id": 1,
-        "parent_post_id": 2,
-        "type": 2,
-        "title": "Цитата",
-        "content": "Мы в жизни любим только раз, а после ищем лишь похожих",
+        "parent_post_id": null,
+        "type": 3,
+        "title": "Наконец обработала фотки",
+        "content": "img/rock.jpg",
         "views": 0,
-        "likes": 3,
+        "likes": 25,
         "reposts": 0,
         "comments": 0,
-        "created_at": null,
-        "updated_at": null,
+        "created_at": "15 минут назад",
+        "updated_at": "",
         "author": {
             "id": 1,
-            "name": null,
-            "image": ""
+            "name": "Анджелина Джоли",
+            "image": "img/userpic-elvira.jpg"
         },
-        "original_author": {
-            "id": 5,
-            "name": null,
-            "image": "\\img\\userpic-petro.jpg"
-        }
+        "original_author": null
     },
     {
         "id": 2,
         "parent_post_id": null,
         "type": 1,
-        "title": "Игра престолов",
-        "content": "Не могу дождаться начала финального сезона своего любимого сериала!",
+        "title": "Полезный пост про Байкал",
+        "content": "Озеро Байкал – огромное древнее озеро в горах Сибири к северу от монгольской границы. Байкал считается самым глубоким озером в мире. Он окружен сетью пешеходных маршрутов, называемых Большой байкальской тропой. Деревня Листвянка, расположенная на западном берегу озера, – популярная отправная точка для летних экскурсий. Зимой здесь можно кататься на коньках и собачьих упряжках.",
         "views": 0,
-        "likes": 0,
+        "likes": 45,
         "reposts": 1,
         "comments": 1,
-        "created_at": null,
-        "updated_at": null,
+        "created_at": "25 минут назад",
+        "updated_at": "",
         "author": {
             "id": 2,
-            "name": null,
-            "image": ""
+            "name": "Таня Фирсова",
+            "image": "img/userpic-tanya.jpg"
         },
         "original_author": null
     },
     {
         "id": 3,
         "parent_post_id": null,
-        "type": 3,
+        "type": 4,
         "title": "Наконец, обработал фотки!",
-        "content": "\\img\\rock-medium.jpg",
+        "content": "img/coast.jpg",
         "views": 0,
         "likes": 0,
         "reposts": 0,
         "comments": 1,
-        "created_at": null,
-        "updated_at": null,
+        "created_at": "5 часов назад",
+        "updated_at": "",
         "author": {
             "id": 3,
-            "name": null,
-            "image": "\\img\\userpic-larisa.jpg"
+            "name": "Петр Демин",
+            "image": "img/userpic-petro.jpg"
         },
         "original_author": null
     },
     {
         "id": 4,
         "parent_post_id": null,
-        "type": 3,
-        "title": "Моя мечта",
-        "content": "\\img\\coast-medium.jpg",
+        "type": 2,
+        "title": "",
+        "content": "Тысячи людей живут без любви, но никто — без воды.",
+        "cite": "Хью Оден",
         "views": 0,
         "likes": 0,
         "reposts": 0,
         "comments": 0,
-        "created_at": null,
-        "updated_at": null,
+        "created_at": "2 дня назад",
+        "updated_at": "",
         "author": {
-            "id": 1,
-            "name": null,
-            "image": ""
+            "id": 4,
+            "name": "Марк Смолов",
+            "image": "img/userpic-mark.jpg"
         },
         "original_author": null
     },
@@ -85,18 +82,18 @@ export const posts: TPost[] = [
         "id": 5,
         "parent_post_id": null,
         "type": 5,
-        "title": "Лучшие курсы",
-        "content": "www.htmlacademy.ru",
+        "title": "Стоматология Вита",
+        "content": "www.vitadental.ru",
         "views": 0,
         "likes": 0,
         "reposts": 0,
         "comments": 1,
-        "created_at": null,
-        "updated_at": null,
+        "created_at": "месяц назад",
+        "updated_at": "",
         "author": {
-            "id": 2,
-            "name": null,
-            "image": ""
+            "id": 5,
+            "name": "Виктория Умнова",
+            "image": "img/userpic-larisa.jpg"
         },
         "original_author": null
     }
