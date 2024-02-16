@@ -6,7 +6,6 @@ import { posts } from "../mocks/post-mocks";
 
 function FeedPage(): JSX.Element {
     const allPosts =posts.map((post) => <Post post={post}/>);
-
     return (
         <div>
             <Header />
