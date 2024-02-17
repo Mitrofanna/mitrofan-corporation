@@ -1,4 +1,4 @@
-import FiltersList from "../components/filters";
+import FiltersList from "../components/filters-list";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import Post from "../components/post";

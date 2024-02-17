@@ -1,5 +1,5 @@
 import { filters } from "../const";
-import classNames from "classnames";
+import cn from "classnames";
 
 type FiltersListProps = {
     isFeedPage: boolean;
@@ -7,16 +7,16 @@ type FiltersListProps = {
 
 function FiltersList(isFeedPage : FiltersListProps): JSX.Element {
     return (
-        <ul className={classNames(
-            {"popular__filters-list filters__list": !isFeedPage},
-            {"feed__filters filters": isFeedPage},
+        <ul className={cn(
+            {"popular__filters-list filters__list": !isFeedPage,
+            "feed__filters filters": isFeedPage},
             )}>
-        <li className={classNames(
-            {"popular__filters-item popular__filters-item--all filters__item--all": !isFeedPage},
-            {"feed__filters-item": isFeedPage},
+        <li className={cn(
+            {"popular__filters-item popular__filters-item--all filters__item--all": !isFeedPage,
+            "feed__filters-item": isFeedPage},
             "filters__item"
         )}>
-            <a className={classNames(
+            <a className={cn(
                  {"filters__button--all filters__button--ellipse": !isFeedPage},
                  "filters__button filters__button--active"
             )} href="#">
@@ -24,9 +24,9 @@ function FiltersList(isFeedPage : FiltersListProps): JSX.Element {
             </a>
         </li>
         {filters.map((filter) => (
-            <li key={filter.id} className={classNames(
-                {"popular__filters-item": !isFeedPage},
-                {"feed__filters-item": isFeedPage},
+            <li key={filter.id} className={cn(
+                {"popular__filters-item": !isFeedPage,
+                "feed__filters-item": isFeedPage},
                 "filters__item"
             )}>
             <a className={`filters__button filters__button--${filter.type} button`} href="#">
