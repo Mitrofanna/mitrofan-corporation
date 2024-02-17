@@ -3,7 +3,10 @@ import { TFilter } from "./types/filters-type";
 export enum AppRoute {
     Root = '/',
     Registration = '/registration',
-    Feed = '/feed'
+    Feed = '/feed',
+    Profile = '/profile',
+    Messages = '/messages',
+    Popular = '/popular'
 };
 
 export const filters: TFilter[] = [

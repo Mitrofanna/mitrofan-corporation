@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Header(): JSX.Element {
     return (
@@ -28,24 +28,24 @@ function Header(): JSX.Element {
           <nav className="header__nav">
             <ul className="header__my-nav">
               <li className="header__my-page header__my-page--popular">
-                <a className="header__page-link" href="popular.html" title="Популярный контент">
+                <NavLink className="header__page-link" to="/popular" title="Популярный контент">
                   <span className="visually-hidden">Популярный контент</span>
-                </a>
+                </NavLink>
               </li>
               <li className="header__my-page header__my-page--feed">
-                <a className="header__page-link" href="feed.html" title="Моя лента">
+                <NavLink className="header__page-link" to="/feed" title="Моя лента">
                   <span className="visually-hidden">Моя лента</span>
-                </a>
+                </NavLink>
               </li>
               <li className="header__my-page header__my-page--messages">
-                <a className="header__page-link" href="messages.html" title="Личные сообщения">
+                <NavLink className="header__page-link" to="/messages" title="Личные сообщения">
                   <span className="visually-hidden">Личные сообщения</span>
-                </a>
+                </NavLink>
               </li>
             </ul>
             <ul className="header__user-nav">
               <li className="header__profile">
-                <a className="header__profile-link" href="#">
+                <NavLink className="header__profile-link" to="/profile">
                   <div className="header__avatar-wrapper">
                     <img className="header__profile-avatar" src="img/userpic-medium.jpg" alt="Аватар профиля" />
                   </div>
@@ -55,7 +55,7 @@ function Header(): JSX.Element {
                       <use xlinkHref="#icon-arrow-right-ad"></use>
                     </svg>
                   </div>
-                </a>
+                </NavLink>
                 <div className="header__tooltip-wrapper">
                   <div className="header__profile-tooltip">
                     <ul className="header__profile-nav">

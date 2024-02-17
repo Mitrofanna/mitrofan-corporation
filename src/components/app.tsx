@@ -4,6 +4,9 @@ import { AppRoute } from "../const";
 import RegistrationPage from "../pages/registration-page";
 import NotFoundPage from "../pages/not-found-page";
 import FeedPage from "../pages/feed-page";
+import ProfilePage from "../pages/profile-page";
+import MessagesPage from "../pages/messages-page";
+import PopularPage from "../pages/popular-page";
 
 function App(): JSX.Element {
     return (
@@ -20,6 +23,18 @@ function App(): JSX.Element {
             <Route
                 path={AppRoute.Feed}
                 element={<FeedPage />}
+            />          
+            <Route
+                path={AppRoute.Profile}
+                element={<ProfilePage />}
+            />          
+            <Route
+                path={AppRoute.Messages}
+                element={<MessagesPage />}
+            />          
+            <Route
+                path={AppRoute.Popular}
+                element={<PopularPage />}
             />          
             <Route
                 path="*"
