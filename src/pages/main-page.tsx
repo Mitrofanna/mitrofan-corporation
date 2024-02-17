@@ -8,7 +8,7 @@ function MainPage(): JSX.Element {
             <div className="header__wrapper page__header-wrapper container">
                 <div className="header__logo-wrapper page__logo-wrapper">
                 <Link className="header__logo-link header__logo-link--active" to="/">
-                    <img className="header__logo" src="img/logo.svg" alt="Логотип" width="172" height="32" />
+                    <img className="header__logo header__logo-main" src="img/logo.png" alt="Логотип" width="170" height="170" />
                 </Link>
                 <p className="header__topic page__header-topic">
                     mitrofan corporation
@@ -16,9 +16,6 @@ function MainPage(): JSX.Element {
                 </div>
                 <div className="header__nav-wrapper">
                 <nav className="header__nav">
-                    <p className="header__register-slogan">
-                    Еще нет аккаунта?
-                    </p>
                     <ul className="header__user-nav">
                     <li>
                         <Link className="header__user-button header__register-button button button--transparent" to="/registration">Регистрация</Link>
@@ -34,7 +31,8 @@ function MainPage(): JSX.Element {
             <div className="page__main-wrapper page__main-wrapper--intro container">
                 <section className="intro">
                 <h2 className="visually-hidden">Наши преимущества</h2>
-                <b className="intro__slogan">Создавай контент,<br></br> делись творчеством,<br></br>общайся </b>
+                <h2 className="intro__blog">GO CHAT</h2>
+                <b className="intro__slogan">создавай контент,<br></br> делись творчеством,<br></br>общайся</b>
                 <ul className="intro__advantages-list">
                     <li className="intro__advantage intro__advantage--ease">
                     <p className="intro__advantage-text">

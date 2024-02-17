@@ -6,7 +6,7 @@ function Header(): JSX.Element {
       <div className="header__wrapper container">
         <div className="header__logo-wrapper">
           <Link className="header__logo-link" to="/">
-            <img className="header__logo" src="img/logo.svg" alt="Логотип readme" width="128" height="24" />
+            <img className="header__logo" src="img/logo.png" alt="Логотип readme" width="70" height="70" />
           </Link>
           <p className="header__topic">
             mitrofan corporation
