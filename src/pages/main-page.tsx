@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import Footer from "../components/footer";
+import { Helmet } from "react-helmet-async";
 
 function MainPage(): JSX.Element {
     return (
         <div className="page page--main">
+            <Helmet>
+                <title>GO CHAT, вход</title>
+            </Helmet>
             <header className="header page__header">
             <div className="header__wrapper page__header-wrapper container">
                 <div className="header__logo-wrapper page__logo-wrapper">
@@ -16,7 +20,7 @@ function MainPage(): JSX.Element {
                 </div>
                 <div className="header__nav-wrapper">
                 <nav className="header__nav">
-                    <ul className="header__user-nav">
+                    <ul className="header__user-nav header-right">
                     <li>
                         <Link className="header__user-button header__register-button button button--transparent" to="/registration">Регистрация</Link>
                     </li>

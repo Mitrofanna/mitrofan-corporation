@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import FiltersList from "../components/filters-list";
 import Footer from "../components/footer";
 import Header from "../components/header";
@@ -8,6 +9,9 @@ function FeedPage(): JSX.Element {
     const allPosts =posts.map((post) => <Post post={post}/>);
     return (
         <div>
+            <Helmet>
+                <title>моя лента</title>
+            </Helmet>
             <Header />
             <main className="page__main page__main--feed">
                 <div className="container">

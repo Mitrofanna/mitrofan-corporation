@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import FiltersList from "../components/filters-list";
 import Footer from "../components/footer";
 import Header from "../components/header";
@@ -7,6 +8,9 @@ import { posts } from "../mocks/post-mocks";
 function PopularPage(): JSX.Element {
     return (
         <>
+        <Helmet>
+            <title>все посты</title>
+        </Helmet>
         <Header />
         <section className="page__main page__main--popular">
         <div className="container">

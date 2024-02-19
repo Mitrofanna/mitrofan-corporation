@@ -1,9 +1,13 @@
+import { Helmet } from "react-helmet-async";
 import Footer from "../components/footer";
 import Header from "../components/header";
 
 function MessagesPage(): JSX.Element {
     return (
         <div>
+            <Helmet>
+                <title>сообщения</title>
+            </Helmet>
             <Header />
             <main className="page__main page__main--messages">
             <h1 className="visually-hidden">Личные сообщения</h1>

@@ -1,9 +1,13 @@
+import { Helmet } from "react-helmet-async";
 import Footer from "../components/footer";
 import Header from "../components/header";
 
 function ProfilePage(): JSX.Element {
     return (
         <div>
+            <Helmet>
+                <title>профиль</title>
+            </Helmet>
             <Header />
             <main className="page__main page__main--profile">
             <h1 className="visually-hidden">Профиль</h1>

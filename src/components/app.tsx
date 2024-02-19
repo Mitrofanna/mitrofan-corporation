@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import MainPage from "../pages/main-page";
 import { AppRoute } from "../const";
 import RegistrationPage from "../pages/registration-page";
@@ -10,6 +11,7 @@ import PopularPage from "../pages/popular-page";
 
 function App(): JSX.Element {
     return (
+        <HelmetProvider>
         <BrowserRouter>
         <Routes>
             <Route
@@ -42,6 +44,7 @@ function App(): JSX.Element {
             />          
         </Routes>
         </BrowserRouter>
+        </HelmetProvider>
     );
 }
 

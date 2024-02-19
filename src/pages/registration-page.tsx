@@ -1,10 +1,14 @@
+import { Helmet } from "react-helmet-async";
 import Footer from "../components/footer";
 import Header from "../components/header";
 
 function RegistrationPage(): JSX.Element {
     return(
         <div>
-       <Header />
+        <Helmet>
+            <title>регистрация</title>
+        </Helmet>
+        <Header />
         <main className="page__main page__main--registration">
         <div className="container">
             <h1 className="page__title page__title--registration">Регистрация</h1>
