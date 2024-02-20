@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Footer from "../components/footer";
 import { Helmet } from "react-helmet-async";
+import "../styles/glitch.css";
 
 function MainPage(): JSX.Element {
     return (
@@ -13,7 +14,7 @@ function MainPage(): JSX.Element {
                 <div className="header__logo-wrapper page__logo-wrapper">
                 <Link className="header__logo-link header__logo-link--active" to="/">
                     <img className="header__logo header__logo-main" src="img/logo.png" alt="Логотип" width="170" height="170" />
-                </Link>
+                </Link>              
                 <p className="header__topic page__header-topic">
                     mitrofan corporation
                 </p>
@@ -34,8 +35,9 @@ function MainPage(): JSX.Element {
             <h1 className="visually-hidden">Главная страница блога</h1>
             <div className="page__main-wrapper page__main-wrapper--intro container">
                 <section className="intro">
-                <h2 className="visually-hidden">Наши преимущества</h2>
-                <h2 className="intro__blog">GO CHAT</h2>
+                <div className="intro__title box">
+                    <h1 className="intro__glitch glitch">GO CHAT</h1>
+                </div>
                 <b className="intro__slogan">создавай контент,<br></br> делись творчеством,<br></br>общайся</b>
                 <ul className="intro__advantages-list">
                     <li className="intro__advantage intro__advantage--ease">
