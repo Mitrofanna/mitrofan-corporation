@@ -38,19 +38,7 @@ function MainPage(): JSX.Element {
                 <div className="intro__title box">
                     <h1 className="intro__glitch glitch">GO CHAT</h1>
                 </div>
-                <b className="intro__slogan">создавай контент,<br></br> делись творчеством,<br></br>общайся</b>
-                <ul className="intro__advantages-list">
-                    <li className="intro__advantage intro__advantage--ease">
-                    <p className="intro__advantage-text">
-                        Общайся&nbsp;с&nbsp;друзьями, находи единомышленников
-                    </p>
-                    </li>
-                    <li className="intro__advantage intro__advantage--no-excess">
-                    <p className="intro__advantage-text">
-                        Делись всем, что считаешь важным
-                    </p>
-                    </li>
-                </ul>
+                <b className="intro__slogan">создавай контент<br></br> делись творчеством<br></br>общайся</b>
                 </section>
                 <section className="authorization">
                 <h2 className="visually-hidden">Авторизация</h2>
