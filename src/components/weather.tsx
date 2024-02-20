@@ -12,11 +12,13 @@ function Weather(): JSX.Element {
     }
 
     return (
-    <article className="promo__block promo__block--barbershop">
+    <article className="weather promo__block promo__block--barbershop">
         <form onSubmit={getWeather}>
-            <input type="text" name="city" placeholder="город"></input>
-            <button type="submit">узнать погоду</button>
+            <input className="weather__input" type="text" name="city" placeholder="город"></input>
+            <button className="weather__button" type="submit">узнать погоду</button>
         </form>
+        <h3 className="weather__city">{}</h3>
+        <span className="weather__temperature">{}</span>
     </article> 
     );
 }

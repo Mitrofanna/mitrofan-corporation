@@ -8,7 +8,7 @@ import QuoteOfDay from "../components/quote-of-day";
 import Weather from "../components/weather";
 
 function FeedPage(): JSX.Element {
-    const allPosts =posts.map((post) => <Post post={post}/>);
+    const allPosts =posts.map((post) => <Post post={post} key={post.id}/>);
     return (
         <div>
             <Helmet>
