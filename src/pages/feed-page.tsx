@@ -4,6 +4,8 @@ import Footer from "../components/footer";
 import Header from "../components/header";
 import Post from "../components/post";
 import { posts } from "../mocks/post-mocks";
+import QuoteOfDay from "../components/quote-of-day";
+import Weather from "../components/weather";
 
 function FeedPage(): JSX.Element {
     const allPosts =posts.map((post) => <Post post={post}/>);
@@ -28,24 +30,8 @@ function FeedPage(): JSX.Element {
                     <FiltersList isFeedPage />
                     </section>
                     <aside className="promo">
-                    <article className="promo__block promo__block--barbershop">
-                        <h2 className="visually-hidden">Рекламный блок</h2>
-                        <p className="promo__text">
-                        Все еще сидишь на окладе в офисе? Открой свой барбершоп по нашей франшизе!
-                        </p>
-                        <a className="promo__link" href="#">
-                        Подробнее
-                        </a>
-                    </article>
-                    <article className="promo__block promo__block--technomart">
-                        <h2 className="visually-hidden">Рекламный блок</h2>
-                        <p className="promo__text">
-                        Товары будущего уже сегодня в онлайн-сторе Техномарт!
-                        </p>
-                        <a className="promo__link" href="#">
-                        Перейти в магазин
-                        </a>
-                    </article>
+                    <Weather />
+                    <QuoteOfDay />
                     <article className="promo__block">
                         <h2 className="visually-hidden">Рекламный блок</h2>
                         <p className="promo__text">
