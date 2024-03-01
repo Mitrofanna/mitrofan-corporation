@@ -1,0 +1,52 @@
+.bg-pan-tr {
+    background: url(../../public/img/coast.jpg);
+    
+	-webkit-animation: bg-pan-tr 90s infinite both;
+	        animation: bg-pan-tr 90s infinite both;
+}
+
+@-webkit-keyframes bg-pan-tr {
+    0% {
+      background-position: 0% 100%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+}
+@keyframes bg-pan-tr {
+    0% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+.weather__input::placeholder {
+    color: #ffffff;
+}
+  
+.weather__form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather__input {
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+.weather__icon {
+    fill: #ffffff;
+}
+
+.weather__info {
+    margin-top: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.weather__temperature {
+    font-size: 34px;
+    line-height: 34px;
+}
