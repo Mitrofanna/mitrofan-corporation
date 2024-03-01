@@ -6,6 +6,7 @@ import Post from "../components/post";
 import { posts } from "../mocks/post-mocks";
 import QuoteOfDay from "../components/quote-of-day";
 import Weather from "../components/weather";
+import { quotes } from "../const";
 
 function FeedPage(): JSX.Element {
     const allPosts =posts.map((post) => <Post post={post} key={post.id}/>);
@@ -31,7 +32,7 @@ function FeedPage(): JSX.Element {
                     </section>
                     <aside className="promo">
                     <Weather />
-                    <QuoteOfDay />
+                    <QuoteOfDay quotes={quotes}/>
                     <article className="promo__block">
                         <h2 className="visually-hidden">Рекламный блок</h2>
                         <p className="promo__text">

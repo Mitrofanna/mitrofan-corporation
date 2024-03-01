@@ -17,14 +17,15 @@
     z-index: 1;
     height: 340px;
     width: 260px;
-    filter: brightness(50%);
+    filter: brightness(45%);
 }
 
 .quote__text {
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 18px;
 }
 
 .quote__title {
     z-index: 10;
+    margin: 0;
 }
