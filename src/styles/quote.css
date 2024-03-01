@@ -1,0 +1,30 @@
+.quote__content {
+    margin: 0;
+    z-index: 10;
+}
+
+.quote {
+    position: relative;
+    color: #ffffff;
+}
+
+.quote__image {
+    position: absolute;
+    border-radius: 30px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+    height: 340px;
+    width: 260px;
+    filter: brightness(50%);
+}
+
+.quote__text {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.quote__title {
+    z-index: 10;
+}

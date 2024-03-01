@@ -1,15 +1,22 @@
-function QuoteOfDay(): JSX.Element {
+import "../styles/quote.css";
+import { quotes } from "../const";
+import { TQuote } from "../types/quote-type";
+
+type TQuoteOfDay = {
+    quote: TQuote
+}
+
+function QuoteOfDay({quote}: TQuote): JSX.Element {
     return (
-        <article className="promo__block promo__block--technomart">
-            <h2 className="promo__title-quote">Цитата дня</h2>
-            <i className="fas fa-quote-left"></i>
-            <p className="promo__text">
-            Товары будущего уже сегодня в онлайн-сторе Техномарт!
-            </p>
-            <i className="fas fa-quote-right"></i>
-            <a className="promo__link" href="#">
-            Перейти в магазин
-            </a>
+        <article className="quote promo__block">
+            <img className="quote__image" src={}></img>
+            <h2 className="quote__title promo__title-quote">Цитата дня</h2>
+            <blockquote className="quote__content">
+                <p className="quote__text">
+                Свобода ничего не стоит, если она не включает в себя свободу ошибаться.
+                </p>
+                <cite>Махатма Ганди</cite>
+            </blockquote>
         </article>
     );
 }
