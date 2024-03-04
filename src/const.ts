@@ -89,4 +89,10 @@ export const quotes: TQuote[] = [
         autor: "Чак Паланик «Бойцовский клуб»",
         image: "img/20.jpg"
     }
-]
+];
+
+export enum AuthorizationStatus {
+    Auth = 'AUTH',
+    NoAuth = 'NO_AUTH',
+    Unknown = 'UNKNOWN',
+};
