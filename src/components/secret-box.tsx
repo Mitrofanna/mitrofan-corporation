@@ -13,7 +13,7 @@ function SecretBox(props: any): JSX.Element {
 
     return (
         <article className="promo__block secret">
-            <h3 className="secret__title">Здесь могла бы быть ваша реклама</h3>
+            <h3 className="secret__title">Хорошего дня!</h3>
             <div className="secret__container">
                 {Array(props).fill(<div className="secret__box"></div>).map((_, i) => 
                 <div className="secret__box" 
