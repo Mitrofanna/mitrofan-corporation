@@ -61,7 +61,7 @@ function MainPage(): JSX.Element {
                     </div>
                     <a className="authorization__recovery" href="#">Восстановить пароль</a>
                     <Link to='/feed'>
-                    <button className="authorization__submit button button--main" type="submit">Войти</button>
+                    <button className="shake-vertical authorization__submit button button--main" type="submit">Войти</button>
                     </Link>
                 </form>
                 </section>
