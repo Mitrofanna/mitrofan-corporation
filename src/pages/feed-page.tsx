@@ -7,6 +7,7 @@ import { posts } from "../mocks/post-mocks";
 import QuoteOfDay from "../components/quote-of-day";
 import Weather from "../components/weather";
 import { quotes } from "../const";
+import SecretBox from "../components/secret-box";
 
 function FeedPage(): JSX.Element {
     const allPosts =posts.map((post) => <Post post={post} key={post.id}/>);
@@ -33,15 +34,7 @@ function FeedPage(): JSX.Element {
                     <aside className="promo">
                     <Weather />
                     <QuoteOfDay quotes={quotes}/>
-                    <article className="promo__block">
-                        <h2 className="visually-hidden">Рекламный блок</h2>
-                        <p className="promo__text">
-                        Здесь<br></br> могла быть<br></br> ваша реклама
-                        </p>
-                        <a className="promo__link" href="#">
-                        Разместить
-                        </a>
-                    </article>
+                    <SecretBox />
                     </aside>
                 </div>
             </main>

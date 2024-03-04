@@ -18,6 +18,7 @@
     height: 340px;
     width: 260px;
     filter: brightness(45%);
+    filter: brightness(45%) sepia(80%);
 }
 
 .quote__text {
