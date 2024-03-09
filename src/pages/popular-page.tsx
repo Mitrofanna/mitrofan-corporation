@@ -1,9 +1,9 @@
 import { Helmet } from "react-helmet-async";
-import FiltersList from "../components/filters-list";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import PopularPost from "../components/popular-post";
 import { posts } from "../mocks/post-mocks";
+import PopularFiltersList from "../components/popular-filters-list";
 
 function PopularPage(): JSX.Element {
     return (
@@ -11,7 +11,7 @@ function PopularPage(): JSX.Element {
         <Helmet>
             <title>все посты</title>
         </Helmet>
-        <Header />
+        <Header isAuthorized={true} />
         <section className="page__main page__main--popular">
         <div className="container">
             <h1 className="page__title page__title--popular">Популярное</h1>
@@ -48,13 +48,8 @@ function PopularPage(): JSX.Element {
                     </a>
                 </li>
                 </ul>
-            </div>
-            <div className="popular__filters filters">
-                <b className="popular__filters-caption filters__caption">
-                Тип контента:
-                </b>
-                <FiltersList isFeedPage={false} />
-            </div>
+            </div>           
+                <PopularFiltersList />
             </div>
             <div className="popular__posts">
             {posts.map((post) => <PopularPost post={post}/>)}

@@ -4,7 +4,7 @@ type THeader = {
   isAuthorized: boolean;
 }
 
-function Header({isAuthorized = false}: THeader): JSX.Element {
+function Header({isAuthorized = true}: THeader): JSX.Element {
     return (
       <header className="header">
       <div className="header__wrapper container">
@@ -96,12 +96,12 @@ function Header({isAuthorized = false}: THeader): JSX.Element {
                 </nav>
               </div></>): (
                 <ul className="header__user-nav header__login">
-                <li className="header__authorization">
-                  <a className="header__user-button header__authorization-button button" href="login.html">Вход</a>
-                </li>
-                <li>
-                  <a className="header__user-button header__user-button--active header__register-button button">Регистрация</a>
-                </li>
+                  <li className="header__authorization">
+                    <NavLink className="header__user-button header__authorization-button button" to="/">Вход</NavLink>
+                  </li>
+                  <li>
+                    <a className="header__user-button header__user-button--active header__register-button button">Регистрация</a>
+                  </li>
               </ul>
               )}
       </div>

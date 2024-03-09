@@ -1,5 +1,5 @@
 .bg-pan-tr {
-    background: url(../../public/img/coast.jpg);
+    background: url(img/coast.jpg);
     filter: grayscale(30%);
     
 	-webkit-animation: bg-pan-tr 90s infinite both;

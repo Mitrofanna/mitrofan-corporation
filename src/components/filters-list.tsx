@@ -1,34 +1,15 @@
 import { filters } from "../const";
-import cn from "classnames";
 
-type FiltersListProps = {
-    isFeedPage: boolean;
-}
-
-function FiltersList(isFeedPage : FiltersListProps): JSX.Element {
+function FiltersList(): JSX.Element {
     return (
-        <ul className={cn(
-            {"popular__filters-list filters__list": !isFeedPage,
-            "feed__filters filters": isFeedPage},
-            )}>
-        <li className={cn(
-            {"popular__filters-item popular__filters-item--all filters__item--all": !isFeedPage,
-            "feed__filters-item": isFeedPage},
-            "filters__item"
-        )}>
-            <a className={cn(
-                 {"filters__button--all filters__button--ellipse": !isFeedPage},
-                 "filters__button filters__button--active"
-            )} href="#">
+        <ul className="feed__filters filters">
+        <li className="feed__filters-item filters__item">
+            <a className="filters__button filters__button--active" href="#">
                 <span>Все</span>
             </a>
         </li>
         {filters.map((filter) => (
-            <li key={filter.id} className={cn(
-                {"popular__filters-item": !isFeedPage,
-                "feed__filters-item": isFeedPage},
-                "filters__item"
-            )}>
+            <li key={filter.id} className="feed__filters-item filters__item">
             <a className={`filters__button filters__button--${filter.type} button`} href="#">
                 <span className="visually-hidden">{filter.name}</span>
                 <svg className="filters__icon" width="22" height="18">

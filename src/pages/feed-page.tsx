@@ -16,25 +16,25 @@ function FeedPage(): JSX.Element {
             <Helmet>
                 <title>моя лента</title>
             </Helmet>
-            <Header />
+            <Header isAuthorized={true} />
             <main className="page__main page__main--feed">
                 <div className="container">
                     <h1 className="page__title page__title--feed">Моя лента</h1>
                 </div>
                 <div className="page__main-wrapper container">
                     <section className="feed">
-                    <h2 className="visually-hidden">Лента</h2>
-                    <div className="feed__main-wrapper">
-                        <div className="feed__wrapper">
-                            {allPosts}
+                        <h2 className="visually-hidden">Лента</h2>
+                        <div className="feed__main-wrapper">
+                            <div className="feed__wrapper">
+                                {allPosts}
+                            </div>
                         </div>
-                    </div>
-                    <FiltersList isFeedPage />
+                        <FiltersList />
                     </section>
                     <aside className="promo">
-                    <Weather />
-                    <QuoteOfDay quotes={quotes}/>
-                    <SecretBox />
+                        <Weather />
+                        <QuoteOfDay quotes={quotes}/>
+                        <SecretBox />
                     </aside>
                 </div>
             </main>
