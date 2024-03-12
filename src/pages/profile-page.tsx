@@ -8,7 +8,7 @@ function ProfilePage(): JSX.Element {
             <Helmet>
                 <title>профиль</title>
             </Helmet>
-            <Header />
+            <Header isAuthorized={true} />
             <main className="page__main page__main--profile">
             <h1 className="visually-hidden">Профиль</h1>
             <div className="profile profile--default">

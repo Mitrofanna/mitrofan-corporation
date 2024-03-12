@@ -8,7 +8,7 @@ function MessagesPage(): JSX.Element {
             <Helmet>
                 <title>сообщения</title>
             </Helmet>
-            <Header />
+            <Header isAuthorized={true} />
             <main className="page__main page__main--messages">
             <h1 className="visually-hidden">Личные сообщения</h1>
             <section className="messages tabs">
